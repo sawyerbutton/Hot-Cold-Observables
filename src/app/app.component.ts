@@ -14,6 +14,7 @@ export class AppComponent implements OnInit {
   contacts2$: any;
   configUrl = 'assets/contacts.json';
   loading = true;
+  show = false;
   constructor (private http: HttpClient) {
     // too hot observable, second subscriber can not get data from Observable
     // this.contacts$ = http.get(this.configUrl).pipe(publish(), refCount());

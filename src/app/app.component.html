@@ -8,3 +8,6 @@
 <ul>
   <li *ngFor="let contact of contacts2$ | async">{{contact.name}}!</li>
 </ul>
+<hr>
+<button (click)="show = !show">toggle service component</button>
+<app-service-test *ngIf="show"></app-service-test>
