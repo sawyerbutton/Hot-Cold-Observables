@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ServiceTestComponent } from './service-test/service-test.component';
+import { TestPipe } from './test.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServiceTestComponent
+    ServiceTestComponent,
+    TestPipe
   ],
   imports: [
     BrowserModule,

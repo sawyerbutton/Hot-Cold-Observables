@@ -11,3 +11,6 @@
 <hr>
 <button (click)="show = !show">toggle service component</button>
 <app-service-test *ngIf="show"></app-service-test>
+<hr>
+<button (click)="show2 = !show2">toggle service pipe</button>
+<span *ngIf="show2">{{content | testPipe}}</span>
